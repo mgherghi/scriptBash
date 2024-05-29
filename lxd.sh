@@ -1,4 +1,5 @@
 #!/bin/bash
+snap remove lxd
 wget -q -O - https://pkgs.zabbly.com/key.asc | gpg --show-keys --fingerprint
 mkdir -p /etc/apt/keyrings/
 wget -O /etc/apt/keyrings/zabbly.asc https://pkgs.zabbly.com/key.asc
