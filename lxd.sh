@@ -16,3 +16,8 @@ Signed-By: /etc/apt/keyrings/zabbly.asc
 EOF'
 apt update
 apt-get install incus
+
+echo "alias lxd='incus admin'" >> /root/.profile
+echo "alias lxc='incus'" >> /root/.profile
+source /root/.profile
+clear
